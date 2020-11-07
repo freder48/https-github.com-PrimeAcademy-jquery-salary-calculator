@@ -6,9 +6,9 @@ $(document).ready(readyNow);
 function readyNow() {
     console.log('Hello from JQ');
     $('#submit').on('click', addEmployee);
-
+    $('.tableInfo').on('click', '#gone', removeEmployee);
+   
 }
-
 function addEmployee(event) {
     console.log('Adding Employee');
     event.preventDefault();
@@ -27,12 +27,13 @@ function addEmployee(event) {
     $('.titleInput').val('');
     $('.salaryInput').val('');
 
-    $('.tableInfo').append(` <tr>
-<th>${employees.firstName}</th>
-<th>${employees.lastName}</th>
-<th>${employees.idInput}</th>
-<th>${employees.titleInput}</th>
-<th>${employees.salaryInput}</th>
+    $('.tableInfo').append(`<tr id="gone">
+<th  class="deleteMe">${employees.firstName}</th>
+<th class="deleteMe">${employees.lastName}</th>
+<th class="deleteMe">${employees.idInput}</th>
+<th class="deleteMe">${employees.titleInput}</th>
+<th class="deleteMe">${employees.salaryInput}</th>
+<th><button class="delete">Delete</button></th>
 </tr>`)
 
     salaryArray.push(employees.salaryInput);
@@ -50,4 +51,9 @@ function calculateTotalSalary() {
     } if ( total >= 20000 ) {
         $('.turnRed').addClass('red');
     }
+}
+
+function removeEmployee(){
+    console.log('in remove employee');
+    $(this).remove();
 }
