@@ -54,9 +54,9 @@ function removeEmployee() {
     $(this).parents('#gone').remove();
     let targetRow = $(this).parents('#gone');
     let deletedSalary = targetRow.children('.grabSalary').text();
-    
-    console.log(deletedSalary);
-    total -= (deletedSalary / 12);
-
+    let monthSalary = deletedSalary / 12;
+    console.log(monthSalary);
+    total -= monthSalary;
+    $('.totalMonthly').text(`${total}`);
 
 }
