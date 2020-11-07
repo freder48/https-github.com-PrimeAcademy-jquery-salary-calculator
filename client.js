@@ -1,4 +1,4 @@
-let salaryArray = [];
+let total = 0;
 console.log('Hello');
 
 $(document).ready(readyNow);
@@ -6,9 +6,10 @@ $(document).ready(readyNow);
 function readyNow() {
     console.log('Hello from JQ');
     $('#submit').on('click', addEmployee);
-    $('.tableInfo').on('click', '#gone', removeEmployee);
-   
+    $('.tableInfo').on('click', '.delete', removeEmployee);
+
 }
+
 function addEmployee(event) {
     console.log('Adding Employee');
     event.preventDefault();
@@ -28,32 +29,34 @@ function addEmployee(event) {
     $('.salaryInput').val('');
 
     $('.tableInfo').append(`<tr id="gone">
-<th  class="deleteMe">${employees.firstName}</th>
-<th class="deleteMe">${employees.lastName}</th>
-<th class="deleteMe">${employees.idInput}</th>
-<th class="deleteMe">${employees.titleInput}</th>
-<th class="deleteMe">${employees.salaryInput}</th>
-<th><button class="delete">Delete</button></th>
+<td  class="deleteMe">${employees.firstName}</td>
+<td class="deleteMe">${employees.lastName}</td>
+<td class="deleteMe">${employees.idInput}</td>
+<td class="deleteMe">${employees.titleInput}</td>
+<td class="grabSalary">${employees.salaryInput}</td>
+<td><button class="delete">Delete</button></td>
 </tr>`)
 
-    salaryArray.push(employees.salaryInput);
-
-    calculateTotalSalary(employees)
-
+calculateTotalSalary(employees)
 
 }
 
-function calculateTotalSalary() {
-    let total = 0;
-    for (let i = 0; i < salaryArray.length; i++) {
-        total += Number(salaryArray[i]);
-        $('.totalMonthly').text(`${total}`);
-    } if ( total >= 20000 ) {
+function calculateTotalSalary(employees) {
+    total += Number(employees.salaryInput / 12);
+    $('.totalMonthly').text(`${total}`);
+    if (total >= 20000) {
         $('.turnRed').addClass('red');
     }
 }
 
-function removeEmployee(){
+function removeEmployee() {
     console.log('in remove employee');
-    $(this).remove();
+    $(this).parents('#gone').remove();
+    let targetRow = $(this).parents('#gone');
+    let deletedSalary = targetRow.children('.grabSalary').text();
+    
+    console.log(deletedSalary);
+    total -= (deletedSalary / 12);
+
+
 }
