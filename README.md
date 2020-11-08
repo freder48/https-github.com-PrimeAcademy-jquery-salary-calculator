@@ -4,7 +4,7 @@
 ![TOP_LANGUAGE](https://img.shields.io/https://github.com/freder48/https-github.com-PrimeAcademy-jquery-salary-calculator.svg?style=flat-square)
 ![FORKS](https://github.com/freder48/https-github.com-PrimeAcademy-jquery-salary-calculator.svg?style=social)
 
-# PROJECT NAME
+# jQuery Salary Calculator
 
 ## Description
 
