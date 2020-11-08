@@ -1,21 +1,17 @@
 
 ![MIT LICENSE](https://img.shields.io/.svg?style=flat-square)
-![REPO SIZE](https://img.shields.io/https://github.com/freder48/https-github.com-PrimeAcademy-jquery-salary-calculator.svg?style=flat-square)
-![TOP_LANGUAGE](https://img.shields.io/https://github.com/freder48/https-github.com-PrimeAcademy-jquery-salary-calculator.svg?style=flat-square)
-![FORKS](https://github.com/freder48/https-github.com-PrimeAcademy-jquery-salary-calculator.svg?style=social)
+![REPO SIZE](https://img.shields.io/github/repo-size/josiefredericksen/jquery-salary-calculator.svg?style=flat-square)
+![TOP_LANGUAGE](https://img.shields.io/github/languages/top/josiefredericksen/jquery-salary-calculator.svg?style=flat-square)
+![FORKS](https://img.shields.io/github/forks/josiefredericksen/jquery-salary-calculator.svg?style=social)
 
 # jQuery Salary Calculator
 
 ## Description
 
-_Duration: 10 hours
+Duration: 10 hours
 
 This is a website that calculates employees' monthly salaries. You can add/remove employees as needed, and expenses will adjust.One can utilize it to track and monitor payroll.
 
-
-## Screen Shot
-
-Include one or two screen shots of your project here (optional). Remove if unused.
 
 ## Installation
 
@@ -31,7 +27,6 @@ Include one or two screen shots of your project here (optional). Remove if unuse
 ## Built With
 
 JavaScript, jQuery, HTML, CSS
-
 
 ## Acknowledgement
 Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality. 
