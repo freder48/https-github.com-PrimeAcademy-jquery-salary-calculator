@@ -44,7 +44,7 @@ function addEmployee(event) {
     //call calculateTotalSalary
     calculateTotalSalary(employees);
 
-}   //end addEmployee
+} //end addEmployee
 
 //start calculateTotalSalary
 function calculateTotalSalary(employees) {
@@ -55,7 +55,7 @@ function calculateTotalSalary(employees) {
     //turn background color red if monthly salary exceeds 20000
     if (total >= 20000) {
         $('.turnRed').addClass('red');
-    } 
+    }
     //end conditional
 } //end calculateTotalSalary
 
@@ -73,11 +73,10 @@ function removeEmployee() {
     console.log(monthSalary);
     //subtract deleted employee monthly salary from total
     total -= monthSalary;
-    
-    if (total < 20000){
+    //conditional to change background
+    if (total < 20000) {
         $('.turnRed').removeClass('red');
     }
-
     //append total to DOM
     $('.totalMonthly').text(`$${Math.round(total)}`);
 
