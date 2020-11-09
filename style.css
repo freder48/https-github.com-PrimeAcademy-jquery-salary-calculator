@@ -6,6 +6,7 @@
 body {
     background-image: url("watercolor.jpg");
     background-size: cover;
+    transition: background 3s linear;
 }
 
 .headerBackground{
