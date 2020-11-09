@@ -1,8 +1,8 @@
 
 ![MIT LICENSE](https://img.shields.io/.svg?style=flat-square)
-![REPO SIZE](https://img.shields.io/github/repo-size/freder48/jquery-salary-calculator.svg?style=flat-square)
-![TOP_LANGUAGE](https://img.shields.io/github/languages/top/freder48/jquery-salary-calculator.svg?style=flat-square)
-![FORKS](https://img.shields.io/github/forks/freder48/jquery-salary-calculator.svg?style=social)
+![REPO SIZE](https://img.shields.io/github/repo-size/freder48/https-github.com-PrimeAcademy-jquery-salary-calculator.svg?style=flat-square)
+![TOP_LANGUAGE](https://img.shields.io/github/languages/top/freder48/https-github.com-PrimeAcademy-jquery-salary-calculator.svg?style=flat-square)
+![FORKS](https://img.shields.io/github/forks/freder48/https-github.com-PrimeAcademy-jquery-salary-calculator.svg?style=social)
 
 # jQuery Salary Calculator
 
