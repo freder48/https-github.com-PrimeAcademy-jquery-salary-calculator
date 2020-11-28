@@ -31,6 +31,7 @@ function addEmployee(event) {
     $('.idInput').val('');
     $('.titleInput').val('');
     $('.salaryInput').val('');
+    
     //Append object values to table on DOM
     $('.tableInfo').append(`<tr id="gone">
 <td  class="deleteMe">${employees.firstName}</td>

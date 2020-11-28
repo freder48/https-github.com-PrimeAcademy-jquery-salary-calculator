@@ -1,10 +1,10 @@
 .red {
-    background-image: url("red.jpg");
+    background-image: url("images/red.jpg");
     transition: background 3s linear;
 }
 
 body {
-    background-image: url("watercolor.jpg");
+    background-image: url("images/watercolor.jpg");
     background-size: cover;
 
 }
