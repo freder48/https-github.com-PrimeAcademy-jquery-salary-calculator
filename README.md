@@ -9,7 +9,7 @@
 
 Duration: 10 hours
 
-This is a website that calculates employees' monthly salaries. You can add/remove employees as needed, and expenses will adjust.One can utilize it to track and monitor payroll.
+This is a website that calculates employees' monthly salaries. You can add/remove employees as needed, and expenses will adjust. One can utilize it to track and monitor payroll.
 
 ## Screenshots
 ![image](./images/screenshot.png)
